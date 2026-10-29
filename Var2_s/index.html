@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LiftStend</title>
+    <link rel="icon" type="image/png" href="new_logo.png">
+    <script defer type="text/javascript" src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Шапка -->
+    <header id="header">
+        <div class="header_box">
+            <a class="logo" href="#home">
+                <span class="logo_mark">LS</span>
+                <span class="logo_text">
+                    <span class="logo_name">LiftStend</span>
+                    <span class="logo_sub">Стенды · ремонт плат</span>
+                </span>
+            </a>
+            <div class="nav" id="nav">
+                <a class="nav_link" href="#home">Главная</a>
+                <a class="nav_link" href="#stands">Стенды</a>
+                <a class="nav_link" href="#services">Услуги</a>
+                <a class="nav_link" href="#video">Видео обзоры</a>
+                <a class="nav_link" href="#order">Контакты</a>
+            </div>
+            <a class="header_button" href="#order">Заказать стенд</a>
+            <button class="burger" id="burger">☰</button>
+        </div>
+    </header>
+
+    <main>
+        <!-- Главная -->
+        <section class="hero_block" id="home">
+            <div class="container hero_box">
+                <div class="hero_left">
+                    <span class="hero_badge">Диагностическое оборудование для лифтов</span>
+                    <h1>Стенды для ремонта и диагностики лифтовых плат</h1>
+                    <p class="hero_text">Имитируют работу плат управления в одиночном режиме. Режимы работы стендов соответствуют алгоритму работы платы управления на лифте.</p>
+                    <div class="hero_buttons">
+                        <a class="hero_button_dark" href="#order">Заказать стенд →</a>
+                        <a class="hero_button_light" href="#stands">Смотреть модели</a>
+                    </div>
+                    <div class="hero_stats">
+                        <div class="hero_stat">
+                            <span class="hero_stat_number">3</span>
+                            <span class="hero_stat_text">модели стендов</span>
+                        </div>
+                        <div class="hero_stat">
+                            <span class="hero_stat_number">до 30</span>
+                            <span class="hero_stat_text">этажей в режиме имитации</span>
+                        </div>
+                        <div class="hero_stat">
+                            <span class="hero_stat_number">с 2009</span>
+                            <span class="hero_stat_text">года производства стендов</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero_card">
+                    <div class="hero_card_top">
+                        <span>Модель · ПУ / МПУ / ЦПУ</span>
+                        <span>● В производстве</span>
+                    </div>
+                    <div class="hero_card_photo">
+                        <img src="main_img/accordion_first_photo_no_bg.png" alt="Стенд ПУ, МПУ, ЦПУ">
+                    </div>
+                    <p class="hero_card_caption">Лифты типа УЛ, УКЛ, УЭЛ · до 16 / 30 этажей</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Каталог стендов -->
+        <section class="stands_block" id="stands">
+            <div class="container">
+                <div class="section_top">
+                    <div>
+                        <p class="eyebrow">01 — Каталог</p>
+                        <h2>Модели стендов</h2>
+                    </div>
+                    <p class="section_text">Каждый стенд имитирует работу платы на лифте, что позволяет найти и устранить неисправность на рабочем столе.</p>
+                </div>
+
+                <div class="stands_cards">
+                    <div class="stand_card">
+                        <div class="stand_card_top">
+                            <span>01 / ПУ / МПУ / ЦПУ</span>
+                            <span>до 16 / 30 этажей</span>
+                        </div>
+                        <div class="stand_card_photo">
+                            <img src="main_first_photo_no_bg.png" alt="Стенд ПУ-1, ПУ-3, МПУ, ЦПУ">
+                        </div>
+                        <div class="stand_card_body">
+                            <p class="stand_card_for">Лифты типа УЛ, УКЛ, УЭЛ</p>
+                            <h3>Стенд для ремонта и диагностики лифтовых плат ПУ-1, ПУ-3, МПУ, ЦПУ</h3>
+                            <p class="stand_card_text">Стенд предназначен для диагностики и ремонта плат управления пассажирскими лифтами типа ПУ-1, ПУ-3, МПУ, ЦПУ. Устройство позволяет имитировать работу плат управления в одиночном режиме до 16 или 30-ти этажей. Режимы работы стенда соответствуют алгоритму работы платы управления на лифте.</p>
+                            <div class="more">
+                                <button class="more_header">
+                                    <span>Доработки в текущей версии</span>
+                                    <span class="more_icon">∨</span>
+                                </button>
+                                <div class="more_body">
+                                    <ul>
+                                        <li>Режим работы в «безшунтовом» варианте (по импульсному датчику), позволяет полноценно калибровать плату по импульсам и тестировать её в данном режиме.</li>
+                                        <li>Поддержка плат с проходной кабиной. Добавляются каналы проверки и имитации датчиков ВКО”, ВКЗ”, ДТО”.</li>
+                                        <li>Поддержка платы типа ЦПУ. Для этого дополнительно изготавливается переходной жгут с встроенным коммутатором управляющих сигналов.</li>
+                                        <li>Поддержка плат для регулируемого привода (не использовалось в 2009–2010 годах).</li>
+                                        <li>Значительно доработано программное обеспечение, изменены некоторые параметры обработки датчиков и сигналов. Изменён алгоритм режима «Цикл».</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="stand_card_button" href="#order" data-service="Стенд ПУ-1, ПУ-3, МПУ, ЦПУ">Отправить заявку ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="stand_card">
+                        <div class="stand_card_top">
+                            <span>02 / ПКЛ-17 / 32</span>
+                            <span>до 17 / 30 этажей</span>
+                        </div>
+                        <div class="stand_card_photo">
+                            <img src="main_second_photo_no_bg.png" alt="Стенд ПКЛ-17, ПКЛ-32">
+                        </div>
+                        <div class="stand_card_body">
+                            <p class="stand_card_for">Станции управления ШУЛК, ШУЛМ</p>
+                            <h3>Стенд для ремонта и диагностики лифтовых плат ПКЛ-17, ПКЛ-32</h3>
+                            <p class="stand_card_text">Стенд предназначен для диагностики и ремонта плат управления пассажирскими лифтами типа ПКЛ-17, ПКЛ-32 различных модификаций. Конструкция позволяет имитировать работу плат управления в одиночном режиме до 17 этажей (ПКЛ-17) и до 30 этажей (ПКЛ-32). Все режимы соответствуют алгоритму работы платы управления на лифте.</p>
+                            <div class="more">
+                                <button class="more_header">
+                                    <span>Доработки в текущей версии</span>
+                                    <span class="more_icon">∨</span>
+                                </button>
+                                <div class="more_body">
+                                    <ul>
+                                        <li>Режим работы в «безшунтовом» варианте (по импульсному датчику), позволяет полноценно калибровать плату по импульсам и тестировать её в данном режиме.</li>
+                                        <li>Поддержка плат для регулируемого привода. Для этого дополнительно изготавливается жгут для подачи сигналов рег. привода.</li>
+                                        <li>Значительно доработано программное обеспечение, изменены некоторые параметры обработки датчиков и сигналов. Изменён алгоритм режима «Цикл».</li>
+                                        <li>В матрицу и обработку добавлены некоторые датчики, которые вводились в лифтах ШУЛМ на протяжении последних лет (ПО, фотореверс и др.).</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="stand_card_button" href="#order" data-service="Стенд ПКЛ-17, ПКЛ-32">Отправить заявку ↗</a>
+                        </div>
+                    </div>
+
+                    <div class="stand_card">
+                        <div class="stand_card_top">
+                            <span>03 / ЯУД / УЛУ / ЯВН</span>
+                            <span>до 10 этажей</span>
+                        </div>
+                        <div class="stand_card_photo">
+                            <img src="main_third_photo_no_bg.png" alt="Стенд ЯУД, УЛУ, ЯВН">
+                        </div>
+                        <div class="stand_card_body">
+                            <p class="stand_card_for">Системы УЛЖ-10, УПЛ-10/17</p>
+                            <h3>Стенд для ремонта и диагностики лифтовых плат ЯУД, УЛУ, ЯВН (УЛЖ-10), БУП, БУД, БВПВ, Селектор (УПЛ-10/17)</h3>
+                            <p class="stand_card_text">Стенд предназначен для диагностики и ремонта плат управления пассажирскими лифтами типа ЯУД, ЯЛУ, ЯВН (УЛЖ-10) и БВПВ, БУП, БУД, СЦ10/17 (селектор). Устройство позволяет имитировать работу плат управления в одиночном режиме до 10 этажей. Режимы работы стенда соответствуют алгоритму работы плат управления на лифте.</p>
+                            <div class="more">
+                                <button class="more_header">
+                                    <span>Доработки в текущей версии</span>
+                                    <span class="more_icon">∨</span>
+                                </button>
+                                <div class="more_body">
+                                    <ul>
+                                        <li>Доработано программное обеспечение, алгоритм движения и остановок между этажами. Устранены незначительные ошибки раннего ПО.</li>
+                                        <li>Разработан жгут для подключения полного комплекта ячеек УПЛ к стенду, без использования «корзины». По желанию Заказчика данный жгут дополнительно изготавливается.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <a class="stand_card_button" href="#order" data-service="Стенд ЯУД, УЛУ, ЯВН (УЛЖ-10)">Отправить заявку ↗</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Услуги -->
+        <section class="services_block" id="services">
+            <div class="container">
+                <p class="eyebrow">02 — Услуги</p>
+                <h2 class="services_title">Ремонт электронных плат и оборудования управления лифтами</h2>
+
+                <div class="warning">
+                    <span class="warning_icon">⚠</span>
+                    <p><strong>В связи с высокой загруженностью ремонт плат УЛЖ и УПЛ временно приостановлен.</strong> Исключения возможны только по предварительной договорённости и при точно указанной неисправности.</p>
+                </div>
+
+                <div class="services_box">
+                    <div class="services_photos">
+                        <div class="services_photo"><img src="plata.png" alt="Плата лифта"></div>
+                        <div class="services_photo"><img src="plata2.png" alt="Плата лифта"></div>
+                    </div>
+
+                    <div class="services_right">
+                        <p class="services_label">Оборудование в работе</p>
+                        <div class="service_tags">
+                            <span class="service_tag">БУАД</span>
+                            <span class="service_tag">Магнус</span>
+                            <span class="service_tag">УПДКЛ</span>
+                            <span class="service_tag">Kleemann VVVF4(5)</span>
+                            <span class="service_tag">Emotron</span>
+                            <span class="service_tag">Yaskawa</span>
+                            <span class="service_tag">ABB</span>
+                            <span class="service_tag">KEB</span>
+                            <span class="service_tag">iV5L</span>
+                            <span class="service_tag">Astar</span>
+                            <span class="service_tag_more">и др.</span>
+                        </div>
+                        <p class="services_text">Включая преобразователи частоты, а также модернизацию стендов, приобретённых ранее (в 2009–2017 годах).</p>
+
+                        <p class="services_label">Порядок заключения договора</p>
+                        <div class="steps">
+                            <div class="step">
+                                <span class="step_number">1</span>
+                                <div>
+                                    <h4>Направьте заявку</h4>
+                                    <p>В произвольной форме, с обязательным указанием характера неисправности и типа электронного оборудования.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step_number">2</span>
+                                <div>
+                                    <h4>Приложите реквизиты</h4>
+                                    <p>Карточку предприятия — для выставления счёта и выписки итоговых документов.</p>
+                                </div>
+                            </div>
+                            <div class="step">
+                                <span class="step_number">3</span>
+                                <div>
+                                    <h4>Отправка и получение</h4>
+                                    <p>ТК «Деловые линии», СДЭК, либо иным способом по согласованию с Заказчиком.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mail_links">
+                            <a class="mail_link" href="mailto:stend@liftstend.ru">stend@liftstend.ru</a>
+                            <a class="mail_link" href="mailto:rz3gt@mail.ru">rz3gt@mail.ru</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Жгут -->
+        <section class="harness_block">
+            <div class="container">
+                <div class="harness_card">
+                    <div class="harness_photo">
+                        <img src="tourniquet_no_bg.png" alt="Жгут для подключения ячеек УПЛ">
+                    </div>
+                    <div class="harness_text">
+                        <p class="harness_tag">Опция · к стенду ЯУД / УЛУ / ЯВН</p>
+                        <h3>Жгут для подключения полного комплекта ячеек УПЛ</h3>
+                        <p>Разработан жгут для подключения полного комплекта ячеек УПЛ к стенду, без использования «корзины», что в разы облегчает ремонт. На жгуте смонтирован блок питания и управления, который ранее также требовалось устанавливать в кроссировочный блок, как отдельную ячейку.</p>
+                        <ul>
+                            <li>Подключение полного комплекта ячеек УПЛ без «корзины»</li>
+                            <li>Все платы в открытом виде на столе перед ремонтником</li>
+                            <li>Блок питания и управления смонтирован прямо на жгуте</li>
+                        </ul>
+                        <a class="harness_button" href="#order" data-service="Жгут для подключения ячеек УПЛ">Отправить заявку</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Видео -->
+        <section class="video_block" id="video">
+            <div class="container">
+                <div class="section_top">
+                    <div>
+                        <p class="eyebrow">03 — Видео</p>
+                        <h2>Видео обзоры</h2>
+                    </div>
+                    <p class="section_text">Ремонт блоков питания, преобразователей частоты, лифтового оборудования и доработки инструмента.</p>
+                </div>
+
+                <div class="video_cards">
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/3dimLdB5A6o?si=M0fmq-IZAi1y0u0O" data-video-url-rutube="https://rutube.ru/play/embed/577cb49472d63dc7c70b5eeb5c9b8358/">
+                        <span class="video_card_number">01</span>
+                        <span class="video_card_tag">Блок питания</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Ремонт импульсного блока питания ББП-80</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/gYYps2g2kuI?si=MjqWjasJvv3lVrMN" data-video-url-rutube="https://rutube.ru/play/embed/69391222b21b92d451231698c175569e/">
+                        <span class="video_card_number">02</span>
+                        <span class="video_card_tag">Частотник</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>KEB F5 15kW после ремонта. Неисправность пульта KEB 200-С</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/F8VXqqG8hZE?si=91WdqBbP-UG5NhGc" data-video-url-rutube="https://rutube.ru/play/embed/33957107ef030123530843c90fbc562d/">
+                        <span class="video_card_number">03</span>
+                        <span class="video_card_tag">Блок питания</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Ремонт импульсного блока питания S-200-24 (24 В, 8.3 А)</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/_hUBHWxDgOc?si=CxiB0HFWzqOnmFQD" data-video-url-rutube="https://rutube.ru/play/embed/b9c498be6b939b6a0668a7a57fabfb8b/">
+                        <span class="video_card_number">04</span>
+                        <span class="video_card_tag">Ремонт</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Ремонт автоматического зарядного устройства для АКБ</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/UgYKby1YwtY?si=hETwrcuZmpO-HhOt" data-video-url-rutube="https://rutube.ru/play/embed/b3335d718fd3ce051f9da928967b5e46/">
+                        <span class="video_card_number">05</span>
+                        <span class="video_card_tag">Блок питания</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Ремонт импульсного блока питания 12 В 8,5 А</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/wKMvMfL7JKQ?si=BLm2weTiFpcIsQE8" data-video-url-rutube="https://rutube.ru/play/embed/9170f900b10a3c8d203100ce1a9cf4c1/">
+                        <span class="video_card_number">06</span>
+                        <span class="video_card_tag">Лифт</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Ремонт лифтового фотобарьера. Вандализм.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/qNFyzNgIfYs?si=zouRJWYOXBYHn2U3" data-video-url-rutube="https://rutube.ru/play/embed/4c4732ea5e16cf4ad8ce692c3fda5547/">
+                        <span class="video_card_number">07</span>
+                        <span class="video_card_tag">Доработка</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>CNC 3018 доработка. Убираю люфт оси Z.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/lkrbWZxTByo?si=sfD--3cMkR9yzXLe" data-video-url-rutube="https://rutube.ru/play/embed/5064f8d92779013855f749c4a6975bbe/">
+                        <span class="video_card_number">08</span>
+                        <span class="video_card_tag">DIY</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Подогрев будки для собаки.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/g4o85lcmeTc?si=Vq26dhTgVnRbRfYI" data-video-url-rutube="https://rutube.ru/play/embed/44969db016b9dea8bcc242032e6ad987/">
+                        <span class="video_card_number">09</span>
+                        <span class="video_card_tag">Ремонт</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Ремонт мультиметра MAS 838L</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/U_uVmSd5nIM?si=fQoXWqLXG9e8LxeL" data-video-url-rutube="https://rutube.ru/play/embed/fef722c18a3c90eec3282bfc3b5be1dd/">
+                        <span class="video_card_number">10</span>
+                        <span class="video_card_tag">Частотник</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Магнус 21. Ошибка Е1. Ремонт.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/oTdYFWA3_5U?si=5hP-7SfF7rRqVosa" data-video-url-rutube="https://rutube.ru/play/embed/d01eff2143c14c53cadb41b73d15c258/">
+                        <span class="video_card_number">11</span>
+                        <span class="video_card_tag">DIY</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Разделительный трансформатор 220 х 220 вольт</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/dZtoNxF62ac?si=TH8_FW2lqLTng4OU" data-video-url-rutube="https://rutube.ru/play/embed/bb8de0dfdc75e7e228ccf1fb9c7159b3/">
+                        <span class="video_card_number">12</span>
+                        <span class="video_card_tag">Доработка</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>CNC 3018 концевые выключатели. Борьба с дисконнектами.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/nEyzuoKQazk?si=SzpzJPbjZ-wdhFoz" data-video-url-rutube="https://rutube.ru/play/embed/810841177f5577a0e3478f8d39cfb083/">
+                        <span class="video_card_number">13</span>
+                        <span class="video_card_tag">Блок питания</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Ремонт импульсного БП, 12 вольт, 3 А.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/JfKpwknA_ZQ?si=_v_3QTLyyTW8Pvou" data-video-url-rutube="https://rutube.ru/play/embed/273683b296d7ab9b410e2a91e39626f6/">
+                        <span class="video_card_number">14</span>
+                        <span class="video_card_tag">Доработка</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Доработка мультиметра Mastech MY-68. Режим автоотключения.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/g3Wz3kgiMYE?si=0CQlhmflj9ndzAR6" data-video-url-rutube="https://rutube.ru/play/embed/8bb6beb36efe235b5f480c4c1c773eec/">
+                        <span class="video_card_number">15</span>
+                        <span class="video_card_tag">Доработка</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Доработка мультиметра MY68. Питание от аккумулятора. Автоотключение 2.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/mEqJ1ay0UY8?si=ZnqY0JW5Dh-RIsPM" data-video-url-rutube="https://rutube.ru/play/embed/c27f84928ffb0b1b41650536ed2047dc/">
+                        <span class="video_card_number">16</span>
+                        <span class="video_card_tag">Частотник</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Micromaster 440. Быстрый запуск частотного преобразователя</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/p4gutBq_vdY?si=H1vcMeOK5o7uT7Ve" data-video-url-rutube="https://rutube.ru/play/embed/289e96ec566f6c1ddd8121fa8014059f/">
+                        <span class="video_card_number">17</span>
+                        <span class="video_card_tag">Инструмент</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Обзор демонтажной паяльной станции ProsKit SS 331 на примере демонтажа IGBT сборки.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/TB7trJNlzYM?si=FA-TAdfofgWoHiDs" data-video-url-rutube="https://rutube.ru/play/embed/4a9644f252732be83cd632d89ff4f52c/">
+                        <span class="video_card_number">18</span>
+                        <span class="video_card_tag">Ремонт</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Тест выпайки слота материнской платы.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/TDVHoRf2TbE?si=tgW54vgtu5HrfPYx" data-video-url-rutube="https://rutube.ru/play/embed/9c269059bd94b7d0cc9804c6e0c47fc3/">
+                        <span class="video_card_number">19</span>
+                        <span class="video_card_tag">Частотник</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Магнус 21. Ошибка Е2. Ремонт частотника привод дверей.</h4>
+                    </div>
+                    <div class="video_card" data-video-url-youtube="https://www.youtube.com/embed/OjZ2Uq8c-t0?si=SdjO5ahagh1Zyhrv" data-video-url-rutube="https://rutube.ru/play/embed/77970406b856dd79155bceea15799d4f/">
+                        <span class="video_card_number">20</span>
+                        <span class="video_card_tag">Частотник</span>
+                        <span class="video_card_play">▶</span>
+                        <h4>Преобразователь частоты AS 620. 49 ошибка.</h4>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Окно с видео (скрыто, пока не нажали на карточку) -->
+            <div class="modal">
+                <div class="modal_box">
+                    <div class="modal_top">
+                        <div class="modal_switch_buttons">
+                            <button class="modal_switch_button_youtube active_button_youtube">YouTube</button>
+                            <button class="modal_switch_button_rutube">RuTube</button>
+                        </div>
+                        <button class="modal_box_button" id="close_modal_button">&times;</button>
+                    </div>
+                    <iframe class="iframe" src="" title="Видео" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Заявка -->
+        <section class="order_block" id="order">
+            <div class="container order_box">
+                <div class="order_left">
+                    <p class="eyebrow">04 — Заявка</p>
+                    <h2>Заказать стенд</h2>
+                    <p class="order_text">Опишите, что нужно сделать: модель стенда, тип платы или характер неисправности. Мы свяжемся с вами для уточнения деталей.</p>
+                    <p class="order_label">Контакты</p>
+                    <a class="order_link" href="mailto:stend@liftstend.ru">stend@liftstend.ru</a>
+                    <a class="order_link" href="mailto:rz3gt@mail.ru">rz3gt@mail.ru</a>
+                    <p class="order_delivery">Доставка: ТК «Деловые линии», СДЭК или по согласованию.</p>
+                </div>
+
+                <div class="order_area">
+                    <div class="order_area_1">
+                        <h4 class="order_area_text">Как вас зовут?</h4>
+                        <input class="input_area" id="input_name" type="text" placeholder="Иван Иванов">
+                    </div>
+                    <div class="order_area_2">
+                        <h4 class="order_area_text">Услуга, которая вас интересует</h4>
+                        <select class="input_area" id="input_service">
+                            <option value="">Выберите услугу</option>
+                            <option value="Стенд ПУ-1, ПУ-3, МПУ, ЦПУ">Стенд ПУ-1, ПУ-3, МПУ, ЦПУ</option>
+                            <option value="Стенд ПКЛ-17, ПКЛ-32">Стенд ПКЛ-17, ПКЛ-32</option>
+                            <option value="Стенд ЯУД, УЛУ, ЯВН (УЛЖ-10)">Стенд ЯУД, УЛУ, ЯВН (УЛЖ-10)</option>
+                            <option value="Жгут для подключения ячеек УПЛ">Жгут для подключения ячеек УПЛ</option>
+                            <option value="Ремонт электронной платы">Ремонт электронной платы</option>
+                            <option value="Ремонт преобразователя частоты">Ремонт преобразователя частоты</option>
+                            <option value="Модернизация ранее приобретённого стенда">Модернизация ранее приобретённого стенда</option>
+                        </select>
+                    </div>
+                    <div class="order_area_3">
+                        <h4 class="order_area_text">Ваш номер телефона</h4>
+                        <input class="input_area" id="input_phone" type="tel" placeholder="+7 999 000 99 00">
+                    </div>
+                    <div class="order_area_4">
+                        <h4 class="order_area_text">Ваша электронная почта</h4>
+                        <input class="input_area" id="input_email" type="email" placeholder="mymail@mail.ru">
+                    </div>
+                    <div class="order_area_5">
+                        <h4 class="order_area_text">Расскажите конкретно, что нужно сделать</h4>
+                        <textarea class="textarea" id="input_text" placeholder="Например: плата ПКЛ-32, не отрабатывает вызов с 5 этажа..."></textarea>
+                    </div>
+                    <p class="order_error" id="order_error"></p>
+                    <button class="order_button" id="order_button">Отправить заявку</button>
+                    <p class="order_note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer id="contacts">
+        <div class="container contacts_block">
+            <div class="contacts_left_right">
+                <div class="contacts_left">
+                    <span class="contacts_company_name">LiftStend</span>
+                    <span class="contacts_company_text">Индивидуальный предприниматель Глазунов Сергей Алексеевич</span>
+                </div>
+                <div class="contacts_right">
+                    <a href="tel:+79202402050" class="phone_link">
+                        <svg class="phone_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                        </svg>
+                        <span class="phone_text">+7 (920) 240-20-50</span>
+                    </a>
+                    <a href="mailto:rz3gt@mail.ru" class="mail_footer_link">
+                        <svg class="mail_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        <span class="mail_text">rz3gt@mail.ru</span>
+                    </a>
+                    <a href="mailto:stend@liftstend.ru" class="mail_footer_link">
+                        <svg class="mail_icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="4" width="20" height="16" rx="2" />
+                            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+                        </svg>
+                        <span class="mail_text">stend@liftstend.ru</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="bank_details_title">
+                <span>РЕКВИЗИТЫ · НАЖМИТЕ ЧТОБЫ СКОПИРОВАТЬ</span>
+            </div>
+            <div class="bank_details">
+                <div class="bank_details_mini_card copy_inf">
+                    <span class="bank_details_mini_card_inf">ИНН</span>
+                    <span class="bank_details_mini_card_inf_number">482505605349</span>
+                    <span class="copy_icon">⧉</span>
+                    <span class="check_icon">✓</span>
+                </div>
+                <div class="bank_details_mini_card copy_inf">
+                    <span class="bank_details_mini_card_inf">ОГРНИП</span>
+                    <span class="bank_details_mini_card_inf_number">315482700023823</span>
+                    <span class="copy_icon">⧉</span>
+                    <span class="check_icon">✓</span>
+                </div>
+                <div class="bank_details_mini_card copy_inf">
+                    <span class="bank_details_mini_card_inf">Свидетельство</span>
+                    <span class="bank_details_mini_card_inf_number">серии 48 № 001729984 от 17.06.2015г.</span>
+                    <span class="copy_icon">⧉</span>
+                    <span class="check_icon">✓</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
