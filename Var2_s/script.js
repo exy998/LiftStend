@@ -100,7 +100,7 @@ elementToCopy.forEach(element => {
     })
 })
 
-// Кнопки "Отправить заявку" в карточках выбирают нужную услугу в форме
+//Выбор нужной услуги в форме
 const inputService = document.getElementById("input_service")
 const serviceButtons = document.querySelectorAll("[data-service]")
 serviceButtons.forEach(button => {
@@ -118,13 +118,11 @@ const orderButton = document.getElementById("order_button")
 const orderError = document.getElementById("order_error")
 
 orderButton.addEventListener("click", function() {
-    // сначала убираем красную подсветку с прошлой попытки
     inputName.classList.remove("input_error")
     inputService.classList.remove("input_error")
     inputEmail.classList.remove("input_error")
     orderError.innerText = ""
 
-    // проверяем обязательные поля
     if(inputName.value.trim() === "") {
         inputName.classList.add("input_error")
         orderError.innerText = "Укажите, как вас зовут"
@@ -140,8 +138,7 @@ orderButton.addEventListener("click", function() {
         orderError.innerText = "Укажите корректную электронную почту"
         return
     }
-
-    // Сервера у сайта нет, поэтому заявка уходит через почтовую программу
+// Тестовый вариант
     const subject = "Заявка с сайта LiftStend: " + inputService.value
     const body = "Имя: " + inputName.value + "\n" +
         "Услуга: " + inputService.value + "\n" +
